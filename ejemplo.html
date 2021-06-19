@@ -5,8 +5,8 @@
     <title>Primer Proyecto</title>
     <script type="text/javascript">
 
-    function traerPais(){
-        const respuesta = fetch("https://api.nationalize.io?name=gustavo");
+    async function traerPais(){
+        const respuesta = await fetch("https://api.nationalize.io?name=gustavo");
 
     }
 
