@@ -7,12 +7,12 @@
 
     async function traerPais(){
         const respuesta = await fetch("https://api.nationalize.io?name=gustavo");
-        const nombre = respuesta.json;
+        const nombre = respuesta.json();
         return nombre;
     }
 
     function mostrarName(n){
-        document.getElementById("mensaje").innerHTML = n;         
+        document.getElementById("mensaje").innerHTML = n.country[0].country_id;         
     }
 
     traerPais().then(mostrarName);
