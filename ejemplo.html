@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <title>Primer Proyecto</title>
     <script type="text/javascript">
+
+    function traerPais(){
+        const respuesta = fetch("https://api.nationalize.io?name=gustavo");
+
+    }
+
     function mostrarName(n){
         document.getElementById("mensaje").innerHTML = n;         
     }
