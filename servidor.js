@@ -1,2 +1,7 @@
 const http = require('http');
-let servidor = http.createServer();
+
+function sitioWeb(require){
+
+}
+
+let servidor = http.createServer(sitioWeb);
