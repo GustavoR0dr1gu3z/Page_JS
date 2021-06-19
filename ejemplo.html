@@ -8,6 +8,7 @@
     async function traerPais(){
         const respuesta = await fetch("https://api.nationalize.io?name=gustavo");
         const nombre = respuesta.json;
+        return nombre;
     }
 
     function mostrarName(n){
