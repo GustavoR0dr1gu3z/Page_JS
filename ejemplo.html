@@ -8,7 +8,7 @@
     async function traerPais(){
         const respuesta = await fetch("https://api.nationalize.io?name=gustavo");
         if(!respuesta.OK){
-            let oops("404 No encontré nada!");
+            let oops = "404 No encontré nada!";
             alert(oops);
             throw new Error(oops)
         }
