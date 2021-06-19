@@ -6,3 +6,8 @@ function sitioWeb(req, res){
 }
 
 let servidor = http.createServer(sitioWeb);
+
+// En que direccion usar mi servidor
+servidor.listen(6969,"127.0.0.1");
+
+console.log("servidor corriendo en el puerto 6969");
